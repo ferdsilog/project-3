@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table Layout Page</title>
+  <style>
+	body {
+	font-family: Brush Script MT, cursive;
+	background-image: url('matrix.gif');
+	background-position: center;
+	bakcground-repeat: repeat;
+	margin: auto;
+	color: green;
+	}
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .banner {
+      background-color: black;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav {
+      background-color: black;
+    }
+
+    .nav a {
+      color: green;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+	
+	.nav a:hover {
+	color: red;
+	}
+
+    .main {
+      height: 300px;
+      text-align: center;
+      
+    }
+
+    .footer {
+      background-color: black;
+      color: green;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+   
+    <tr>
+      <td colspan="2" class="banner">My Website Banner</td>
+    </tr>
+
+ 
+    <tr>
+      <td colspan="2" class="nav">
+        <a href="main.html" target="iframe">Home</a>
+        <a href="aboutme.html" target="iframe">About Me</a>
+        <a href="gallery.html" target="iframe">Gallery Picture</a>
+        <a href="videoclip.html" target="iframe">Video Clip</a>
+      </td>
+    </tr>
+
+    
+    <tr>
+      <td colspan="2" class="main">
+        <h2>Welcome to the Main Content Area</h2>
+    
+        <iframe src= "main.html" name="iframe" height = 400px width = 600px>  </iframe>
+      </td>
+    </tr>
+
+   
+    <tr>
+      <td colspan="2" class="footer">&copy; 2025 My Website. All rights reserved.</td>
+    </tr>
+  </table>
+
+</body>
+</html>
